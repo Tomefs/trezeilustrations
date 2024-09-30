@@ -1,0 +1,108 @@
+@font-face {
+    font-family: auge;
+    src: url(font/Auge-Trial-Regular.otf);
+}
+
+@font-face {
+    font-family: augeBlack;
+    src: url(font/Auge-Trial-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.4s;
+    font-family: auge;
+}
+
+body{
+    background-color: rgba(224, 203, 203, 1);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    transition: 0.4s;
+    text-decoration: none;
+    color: rgba(224, 203, 203, 1);
+}
+
+h1{
+    color: rgba(33, 60, 101, 1);
+}
+
+#navBar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-between;
+    width:100%;
+    z-index: 2;
+    text-align: center;
+}
+
+#nav2{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(33, 60, 101, 1);
+    padding: 10px 20px 10px 20px;
+    z-index: 3;
+}
+
+#nav{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    background-color: rgba(42, 22, 14, 0.8);
+    padding: 10px 10px 10px 10px;
+    opacity: 0;
+    transform: translateY(-30px);
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+
+#navBar:hover{
+    #nav{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#nav2 h2{
+    font-size: 1.5rem;
+    font-family: augeBlack;
+}
+
+#nav ul li{
+    padding: 0 3vw;
+}
+
+#navBar img{
+    width: 100%;
+}
+
+#navBar .logo{
+    width: 3rem;
+}
+
+#navBar .icon{
+    width: 2rem;
+    transition: 0.25s ease-in-out;
+    filter: invert(1);
+}
+
+#navBar .icon:hover{
+    transition: 0.15s ease-in-out;
+    filter: invert(0.6);
+}
