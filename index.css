@@ -13,11 +13,12 @@
 }
 
 .sobre{
+    position: relative;
+    top: 50rem;
     display: grid;
     padding: 2rem;
     justify-content: center;
     justify-items: center;
-    padding: 50rem 20px 0 20px;
 }
 
 #sobre{
